@@ -10,7 +10,7 @@ const Navbar = (props) => {
     }
   return (
     <>
-    <div className='pl-[12%] pr-[12%] flex justify-between fixed  h-20 w-full bg-[#00a2db] m-auto'>
+    <div className='pl-[12%] pr-[12%] flex justify-between sticky  h-20 w-full bg-[#00a2db] m-auto'>
         {/* hamburger */}
         <div onClick={burgerFlick} className='md:hidden cursor-pointer flex w-[50%] justify-between items-center'>
             <div className='flex justify-around  items-center flex-col h-10'>
@@ -34,9 +34,9 @@ const Navbar = (props) => {
             <ul className='flex text-white text-lg font-light cursor-pointer'>
                 
                 <li className='hidden md:flex font-semibold underline decoration-green-400 decoration-4 mr-8 '>MATCHES</li>
-                <li className='hidden md:flex mr-8'>SEARCH</li>
-                <li className='hidden md:flex mr-8'>FAVORITES</li>
-                <li className='hidden md:flex mr-8'>MESSAGES</li>
+                <li className='hidden md:flex hover:underline decoration-green-300 decoration-4 mr-8'>SEARCH</li>
+                <li className='hidden md:flex hover:underline decoration-green-300 decoration-4 mr-8'>FAVORITES</li>
+                <li className='hidden md:flex hover:underline decoration-green-300 decoration-4 mr-8'>MESSAGES</li>
                 
             </ul>
             <img className='h-12 w-12 mr-8 rounded-[100%] border-[3px] border-white' src={Me} alt="hi" />
@@ -56,9 +56,9 @@ const Navbar = (props) => {
         <ul className=' flex flex-col items-center text-white text-lg font-light cursor-pointer'>
                 
                 <li className='text-[2rem] font-semibold underline decoration-green-400 decoration-4 mt-10 '>MATCHES</li>
-                <li className='text-[2rem] mt-10'>SEARCH</li>
-                <li className='text-[2rem] mt-10'>FAVORITES</li>
-                <li className='text-[2rem] mt-10'>MESSAGES</li>
+                <li className='text-[2rem] hover:underline decoration-green-300 decoration-4 mt-10'>SEARCH</li>
+                <li className='text-[2rem] hover:underline decoration-green-300 decoration-4 mt-10'>FAVORITES</li>
+                <li className='text-[2rem] hover:underline decoration-green-300 decoration-4 mt-10'>MESSAGES</li>
                 
             </ul>
         </div>
