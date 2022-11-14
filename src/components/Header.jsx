@@ -5,7 +5,7 @@ import Perfect from '../assets/perfect.png'
 const Header = (props) => {
   return (
     <div>
-        <div className=" hidden md:flex md:flex-col md:justify-l lg:flex-row pl-[12%] pr-[12%] justify-between items-center h-24  bg-[#f2f7fa]">
+        <div className=" hidden md:flex md:flex-col md:justify-around 0xl:flex-row pl-[10%] pr-[10%] 0xl:justify-between 0xl:items-center h-24  bg-[#f2f7fa]">
             <h1 className='text-4xl font-medium'>Your Matches</h1>
             <div className="flex items-center">
                 <span>A Perfect Match ® means you both match exactly what you’re looking for. </span>
