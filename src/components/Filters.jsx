@@ -2,21 +2,21 @@ import React from 'react'
 import Map from '../assets/map.png'
 const Filters = (props) => {
   return (
-    <div className='flex justify-between w-full pr-[10%] pl-[10%] mt-8'>
-        <div className="left h-8 w-[130px]  flex items-center justify-center border-[0.5px] rounded-full border-black">
+    <div className='flex sm:flex-col md:flex-row md:justify-between w-full pr-[10%] pl-[10%] mt-8'>
+        <div className="left h-8 sm:w-full sm:mb-4  sm:pl-3 sm:pt-1 md:w-[130px]  md:flex items-center justify-center border-[0.5px] rounded-full border-black">
             <span className='font-bold'>54 <span className='font-light'> matches! 🙌</span></span>
             
         </div>
         <div className="right flex ">
             <div className="one mr-2">
-                <span>Sort: </span>
-                <select className=' h-8 rounded-xs  shadow-[0_2px_6px_0_rgba(0,0,0,0.3)]' name="" id="">
+                <span className='hidden md:inline'>Sort: </span>
+                <select className='sm:w-[32vw] h-8 rounded-xs  hover:cursor-pointer hover:shadow-[#00a2db]  shadow-[0_2px_6px_0_rgba(0,0,0,0.3)] mr-3' name="" id="">
                     <option  value="">Newest first</option>
                 </select>
             </div>
             <div className="two mr-2">
-                <span className='mr-1'>Show:</span>
-                <select className=' h-8 rounded-xs shadow-xl mr-2' name="" id="">
+                <span className='hidden md:inline mr-1 '>Show:</span>
+                <select className='sm:w-[32vw] h-8 rounded-xs hover:shadow-[#00a2db] shadow-[0_2px_6px_0_rgba(0,0,0,0.3)] mr-2' name="" id="">
                     <option value="">All Matches </option>
                 </select>
 
@@ -37,7 +37,7 @@ const Filters = (props) => {
                 <div className="bar h-[2px] w-4 bg-white"></div>
                 
             </div>
-            <div className="thirdButton flex h-8 w-8 bg-slate-600 justify-center mr-2 items-center">
+            <div className="hidden md:flex thirdButton h-8 w-8 bg-slate-600 justify-center mr-2 items-center">
                 <img className='h-4 w-4' src={Map} alt="map" />
             </div>
         </div>
