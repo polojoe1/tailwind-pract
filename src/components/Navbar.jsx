@@ -43,7 +43,7 @@ const Navbar = (props) => {
         </div>
     </div>
     {/* only small menu! */}
-    {open? <div className='flex absolute w-[100%] opacity-90 h-[100%]  bg-[#00a2db] flex-col'>
+    {open? <div className='flex  absolute w-[100%] z-[3] opacity-90 h-[100%]  bg-[#00a2db] flex-col'>
         <div className='flex justify-between items-center p-5'>
         <img className=' h-16' src={Logo} alt="logo" />
         <div>
