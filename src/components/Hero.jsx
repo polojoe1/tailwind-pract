@@ -38,9 +38,9 @@ const Hero = (props) => {
         color:'dark'}
     ])
   return (
-    <div className='pl-[10%] pr-[10%] w-fit flex '>
+    <div className='pl-[10%] pr-[10%] w-full flex flex-wrap xs:justify-center m-auto'>
         {users.map((user,i)=>{
-            return(<div className="flex rounded-sm shadow-md mr-6 hover:shadow-xl flex-col"><div key={i} className='topcard  relative'>
+            return(<div className="flex rounded-sm shadow-md mr-4 mb-4 hover:shadow-xl flex-col"><div key={i} className='topcard  relative'>
                 <img className='h-[150px] w-[225px] object-cover ' src={user.female?user.color==='dark'?DarkGirl:LightGirl:user.color==="dark"?Black:Male} alt='photo'/>
                 <img src={Star} alt="Star" className='absolute h-8 top-2 left-2 z-[2]' />
                 {user.perfect?<img className= 'absolute z-[2] w-[106px] top-0 right-0' src={Perfect} alt='Perfect'/>:''}
