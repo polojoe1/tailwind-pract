@@ -10,13 +10,13 @@ const Filters = (props) => {
         <div className="right mb-4 flex ">
             <div className="one mr-2">
                 <span className='hidden md:inline'>Sort: </span>
-                <select className='xs:w-[32vw] md:w-[110px] h-8 rounded-xs  hover:cursor-pointer hover:shadow-[#00a2db]  shadow-[0_2px_6px_0_rgba(0,0,0,0.3)] mr-3' name="" id="">
+                <select className='xs:w-[30vw] md:w-[110px] h-8 rounded-xs  hover:cursor-pointer hover:shadow-[#00a2db]  shadow-[0_2px_6px_0_rgba(0,0,0,0.3)] mr-3' name="" id="">
                     <option  value="">Newest first</option>
                 </select>
             </div>
             <div className="two mr-2">
                 <span className='hidden md:inline mr-1 '>Show:</span>
-                <select className='xs:w-[32vw] md:w-[110px] h-8 rounded-xs hover:shadow-[#00a2db] shadow-[0_2px_6px_0_rgba(0,0,0,0.3)] mr-2' name="" id="">
+                <select className='xs:w-[30vw] md:w-[110px] h-8 rounded-xs hover:shadow-[#00a2db] shadow-[0_2px_6px_0_rgba(0,0,0,0.3)] mr-2' name="" id="">
                     <option value="">All Matches </option>
                 </select>
 
